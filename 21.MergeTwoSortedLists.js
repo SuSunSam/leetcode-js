@@ -11,17 +11,16 @@
  * @return {ListNode}
  */
 var mergeTwoLists = function(l1, l2) {
-    var ans={val:0,next:null},cur=ans;
+    var ans= new ListNode(-1),cur=ans;
     while(l1&&l2){
-        if(l1.val<=l2.val){
-            cur.next={val:l1.val,next:null};
-            cur=cur.next;
+        if(l1.val <= l2.val){
+             cur.next = l1;
             l1=l1.next;
         }else{
-            cur.next={val:l2.val,next:null};
-            cur=cur.next;
+            cur.next = l2;
             l2=l2.next;
         }
+        cur=cur.next;
     }
     cur.next=l1?l1:l2;
     return ans.next;
