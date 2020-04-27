@@ -3,6 +3,12 @@
  * @param {number} target
  * @return {number}
  */
+/**
+ * 
+ * 执行用时 :68 ms, 在所有 JavaScript 提交中击败了64.44%的用户
+ * 内存消耗 :34.1 MB, 在所有 JavaScript 提交中击败了100.00%的用户 
+ * 
+ */
 var search = function(nums, target) {
     let l = 0, r = nums.length-1;
     if(r==0) return nums[0]==target?0:-1;
@@ -26,7 +32,3 @@ var search = function(nums, target) {
     }
     return -1;
 };
-var nums = [4];
-for(var i=0;i<5;i++){
-    console.log(search(nums,i));
-}
