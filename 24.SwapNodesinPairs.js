@@ -1,3 +1,8 @@
+/**
+ * 
+ * 执行用时 :68 ms, 在所有 JavaScript 提交中击败了51.66%的用户
+ * 内存消耗 :33.7 MB, 在所有 JavaScript 提交中击败了100.00%的用户}  
+ */
 var swapPairs = function(head) {
     var cur = new ListNode(), temp;
     cur.next = head; head = cur;
